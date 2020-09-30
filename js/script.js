@@ -198,21 +198,21 @@ equals.addEventListener("click", () => {
   } else {
     display = operate();
     if (isNaN(display)) {
-      display = ""
-      tempValue = ""
-    }else{
-    var lengthCheck = display.toString().length;
-    if (lengthCheck > 12) {
-      inputBox.textContent = "NUM TOO LARGE";
       display = "";
       tempValue = "";
     } else {
-      inputBox.textContent = display;
-      isResult = 1;
-      tempValue = "";
+      var lengthCheck = display.toString().length;
+      if (lengthCheck > 12) {
+        inputBox.textContent = "NUM TOO LARGE";
+        display = "";
+        tempValue = "";
+      } else {
+        inputBox.textContent = display;
+        isResult = 1;
+        tempValue = "";
+      }
     }
   }
-}
 });
 
 var add = function (a, b) {

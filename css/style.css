@@ -1,4 +1,21 @@
-.border {
+body {
+  background-image:url("../images/background.jpg")
+}
+div.a{
+  text-align: center;
+  font-family: "Orbitron";
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration:  underline;
+  }
+  div.b{
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 150px;
+    font-family: "Orbitron";
+    font-size: 13px;
+  }
+  .border {
   margin: 0 auto;
   border: 8px solid black;
   border-radius: 5%;
@@ -26,10 +43,8 @@ button:active {
 opacity: 100% ;
 }
 .operators {
-  color:  teal;
-  
+  color:  teal; 
 }
-
 #buttons1 {
   display: flex;
   justify-content: center;
